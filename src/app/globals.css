@@ -7,14 +7,17 @@
   --color-bg-elevated: #080808;
   --color-accent: #7f161f;
   --color-accent-dim: #7f161f10;
-  --color-text-primary: #E8E8E8;
-  --color-text-secondary: #777777;
-  --color-text-muted: #383838;
-  --color-border: #141414;
-  --color-border-hover: #222222;
+  --color-gold: #C9A96E;
+  --color-gold-dim: #C9A96E15;
+  --color-text-primary: #F0EDE8;
+  --color-text-secondary: #8A8478;
+  --color-text-muted: #3D3A35;
+  --color-border: #1A1814;
+  --color-border-hover: #2A2720;
   --color-success: #4ADE80;
-  --color-warning: #FBBF24;
+  --color-warning: #C9A96E;
   --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -129,10 +132,38 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #e8e8e8 0%, var(--color-accent) 50%, #e8e8e8 100%);
+  background: linear-gradient(135deg, #F0EDE8 0%, var(--color-gold) 40%, var(--color-accent) 70%, #F0EDE8 100%);
   background-size: 200% 200%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradient-shift 6s ease infinite;
+}
+
+/* Luxury gold shimmer for accents */
+.gold-shimmer {
+  background: linear-gradient(135deg, #C9A96E 0%, #E8D5A8 40%, #C9A96E 60%, #A08050 100%);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 169, 110, 0.08);
+}
+.glass-card:hover {
+  border-color: rgba(201, 169, 110, 0.15);
+  background: rgba(15, 15, 15, 0.8);
+}
+
+/* Luxury divider with gold center */
+.luxury-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(201, 169, 110, 0.3) 50%, transparent 100%);
 }

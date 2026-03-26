@@ -11,7 +11,7 @@ export function NextSteps() {
 
   return (
     <section id="next-steps" className="relative py-32 px-6">
-      <div className="section-divider max-w-6xl mx-auto mb-32" />
+      <div className="luxury-divider max-w-6xl mx-auto mb-32" />
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
@@ -19,7 +19,7 @@ export function NextSteps() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-[1.1] mb-16 font-serif">
             {PROJECT.cta.headline}
           </h2>
         </ScrollReveal>

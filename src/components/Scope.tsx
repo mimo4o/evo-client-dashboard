@@ -8,7 +8,7 @@ import { TiltCard } from "./TiltCard";
 export function Scope() {
   return (
     <section id="scope" className="relative py-32 px-6">
-      <div className="section-divider max-w-6xl mx-auto mb-32" />
+      <div className="luxury-divider max-w-6xl mx-auto mb-32" />
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
@@ -16,7 +16,7 @@ export function Scope() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
+          <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8 font-serif">
             服務範圍
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">

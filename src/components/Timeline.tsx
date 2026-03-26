@@ -13,7 +13,7 @@ export function Timeline() {
 
   return (
     <section id="timeline" className="relative py-32 px-6">
-      <div className="section-divider max-w-6xl mx-auto mb-32" />
+      <div className="luxury-divider max-w-6xl mx-auto mb-32" />
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
@@ -22,7 +22,7 @@ export function Timeline() {
 
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-20">
           <ScrollReveal delay={0.1} variant="slideRight" className="lg:col-span-5 flex flex-col justify-center">
-            <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
+            <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8 font-serif">
               項目路線圖
             </h2>
             <p className="text-[16px] text-text-secondary leading-[1.8] mb-8 tracking-[-0.01em]">

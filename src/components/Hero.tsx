@@ -6,8 +6,9 @@ import { PROJECT } from "@/lib/project-data";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-end px-6 pb-16 pt-32 overflow-hidden grid-texture">
-      {/* Background gradient orb */}
+      {/* Background gradient orbs */}
       <div className="absolute top-1/3 left-1/3 w-[600px] h-[600px] rounded-full bg-accent/[0.02] blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-gold/[0.015] blur-[120px] pointer-events-none" />
 
       {/* Corner brackets on the viewport */}
       <div className="absolute top-6 left-6 w-8 h-8 border-t border-l border-text-muted/20" />
@@ -41,7 +42,7 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mb-12"
         >
-          <h1 className="text-[clamp(4rem,12vw,10rem)] font-bold leading-[0.85] tracking-[-0.05em]">
+          <h1 className="text-[clamp(4rem,12vw,10rem)] font-bold leading-[0.85] tracking-[-0.05em] font-serif">
             <span className="block text-text-primary">{PROJECT.client.name}</span>
             <span className="block">
               <span className="text-text-muted/30 font-light">×</span>
