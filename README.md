@@ -1,4 +1,4 @@
-# 客戶入職儀表板
+# 客戶啟動儀表板
 
 高端互動式客戶項目提案儀表板。基於 Next.js、Tailwind CSS v4、Framer Motion 構建。
 
