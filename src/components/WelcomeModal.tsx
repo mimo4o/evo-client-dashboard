@@ -57,23 +57,23 @@ export function WelcomeModal() {
                 </p>
 
                 <h2 className="text-[22px] font-bold tracking-[-0.02em] text-[#e8e8e8] leading-[1.3] mb-4">
-                  本模板由 Evo+ 製作
+                  180 天內獲得 20 位高單價客戶
                 </h2>
 
                 <p className="text-[14px] text-[#888] leading-[1.7] mb-3">
-                  想要擁有一套完整的品牌獲利系統？從官網、廣告到私域經營，我們幫你一手搞定。
+                  專為線上教練、行銷顧問與高單價服務賣家打造的獲客引擎。
                 </p>
 
                 <p className="text-[14px] text-[#666] leading-[1.7] mb-8">
-                  Evo+ 專注於幫助品牌擺脫平台依賴，打造自主營運的獲利閉環。
+                  不是再教你新工具，而是把價值加入你現有的產品，讓收入實現可預測性。
                 </p>
 
                 {/* Services */}
                 <div className="grid grid-cols-3 gap-3 mb-8">
                   {[
-                    { label: "官網建置", desc: "一個月上線" },
-                    { label: "廣告投放", desc: "精準獲客" },
-                    { label: "私域經營", desc: "鎖定回頭客" },
+                    { label: "定位重塑", desc: "吸引高價客戶" },
+                    { label: "名單引流", desc: "高轉化內容" },
+                    { label: "預約成交", desc: "高價銷售系統" },
                   ].map((item) => (
                     <div
                       key={item.label}
