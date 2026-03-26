@@ -57,7 +57,7 @@ export function WelcomeModal() {
                 </p>
 
                 <h2 className="text-[22px] font-bold tracking-[-0.02em] text-[#e8e8e8] leading-[1.3] mb-4">
-                  本工具由 Evo+ 模板製作
+                  本模板由 Evo+ 製作
                 </h2>
 
                 <p className="text-[14px] text-[#888] leading-[1.7] mb-3">
