@@ -7,14 +7,13 @@ export function WelcomeModal() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    // Only show once — never again after dismissed
-    if (localStorage.getItem("waviboy-welcome-seen")) return;
+    if (localStorage.getItem("evo-welcome-seen")) return;
     const timer = setTimeout(() => setOpen(true), 800);
     return () => clearTimeout(timer);
   }, []);
 
   function dismiss() {
-    localStorage.setItem("waviboy-welcome-seen", "1");
+    localStorage.setItem("evo-welcome-seen", "1");
     setOpen(false);
   }
 
@@ -45,8 +44,8 @@ export function WelcomeModal() {
               {/* Logo area */}
               <div className="flex items-center justify-center py-12 border-b border-[#111]">
                 <img
-                  src="/waviboy-logo.png"
-                  alt="Waviboy"
+                  src="/evo-logo.png"
+                  alt="Evo+"
                   className="h-24 w-auto drop-shadow-[0_0_24px_rgba(255,255,255,0.15)]"
                 />
               </div>
@@ -54,27 +53,27 @@ export function WelcomeModal() {
               {/* Content */}
               <div className="px-8 pt-8 pb-6">
                 <p className="text-[10px] font-mono tracking-[0.3em] text-[#555] uppercase mb-4">
-                  Built with Waviboy
+                  Powered by Evo+
                 </p>
 
                 <h2 className="text-[22px] font-bold tracking-[-0.02em] text-[#e8e8e8] leading-[1.3] mb-4">
-                  This dashboard was generated with AI.
+                  本工具由 Evo+ 模板製作
                 </h2>
 
                 <p className="text-[14px] text-[#888] leading-[1.7] mb-3">
-                  Want to build tools like this, create premium AI visuals, and charge high-end rates?
+                  想要擁有一套完整的品牌獲利系統？從官網、廣告到私域經營，我們幫你一手搞定。
                 </p>
 
                 <p className="text-[14px] text-[#666] leading-[1.7] mb-8">
-                  The Waviboy Academy teaches taste, tools, and business. Not slop. Not templates. The real system behind creating work that looks like it cost 10x what it did.
+                  Evo+ 專注於幫助品牌擺脫平台依賴，打造自主營運的獲利閉環。
                 </p>
 
-                {/* What you learn */}
+                {/* Services */}
                 <div className="grid grid-cols-3 gap-3 mb-8">
                   {[
-                    { label: "Taste", desc: "Visual mastery" },
-                    { label: "Tools", desc: "AI production" },
-                    { label: "Business", desc: "Premium rates" },
+                    { label: "官網建置", desc: "一個月上線" },
+                    { label: "廣告投放", desc: "精準獲客" },
+                    { label: "私域經營", desc: "鎖定回頭客" },
                   ].map((item) => (
                     <div
                       key={item.label}
@@ -92,12 +91,12 @@ export function WelcomeModal() {
 
                 {/* CTA */}
                 <a
-                  href="https://learn.waviboy.com"
+                  href="https://evo.example.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center py-3.5 bg-[#e8e8e8] text-[#0a0a0a] text-[12px] font-semibold tracking-[0.1em] uppercase rounded-lg hover:bg-white transition-colors duration-300"
+                  className="block w-full text-center py-3.5 bg-[#7f161f] text-white text-[12px] font-semibold tracking-[0.1em] uppercase rounded-lg hover:bg-[#9a1b26] transition-colors duration-300"
                 >
-                  Learn More
+                  了解更多
                 </a>
 
                 <button
@@ -111,7 +110,7 @@ export function WelcomeModal() {
               {/* Bottom bar */}
               <div className="px-8 py-4 border-t border-[#111] flex items-center justify-center">
                 <span className="text-[10px] font-mono tracking-[0.2em] text-[#333] uppercase">
-                  @bywaviboy
+                  Evolution Acquisition
                 </span>
               </div>
             </div>

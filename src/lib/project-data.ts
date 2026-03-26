@@ -168,6 +168,7 @@ export const PROJECT = {
   cta: {
     headline: "CTA_HEADLINE",
     body: "CTA_BODY",
+    buttonText: "CTA_BUTTON_TEXT",
     email: "studio@example.com",
   },
   images: {

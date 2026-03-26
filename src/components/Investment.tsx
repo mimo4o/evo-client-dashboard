@@ -129,7 +129,7 @@ export function Investment() {
                     whileTap={{ scale: 0.98 }}
                     className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-xl tracking-[-0.01em]"
                   >
-                    加入早鳥方案 {formatCurrency(q.paymentSchedule[0].amount)}
+                    {PROJECT.cta.buttonText} {formatCurrency(q.paymentSchedule[0].amount)}
                   </motion.a>
                   <p className="text-[10px] text-text-muted/40 text-center mt-4 font-mono tracking-[0.1em]">
                     安全付款

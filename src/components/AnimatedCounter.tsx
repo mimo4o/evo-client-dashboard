@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
+import { PROJECT } from "@/lib/project-data";
 
 export function AnimatedCounter({
   value,
@@ -51,7 +52,7 @@ export function AnimatedCurrency({
   const inView = useInView(ref, { once: true, margin: "-50px" });
   const motionVal = useMotionValue(0);
   const spring = useSpring(motionVal, { duration: 2000, bounce: 0 });
-  const [display, setDisplay] = useState("NT$0");
+  const [display, setDisplay] = useState(`${PROJECT.quote.currency === "TWD" ? "NT$" : "$"}0`);
 
   useEffect(() => {
     if (inView) {
@@ -64,7 +65,7 @@ export function AnimatedCurrency({
       setDisplay(
         new Intl.NumberFormat("zh-TW", {
           style: "currency",
-          currency: "TWD",
+          currency: PROJECT.quote.currency,
           minimumFractionDigits: 0,
           maximumFractionDigits: 0,
         }).format(Math.round(latest))
