@@ -61,7 +61,7 @@ export function WelcomeModal() {
                 </h2>
 
                 <p className="text-[14px] text-[#888] leading-[1.7] mb-3">
-                  專為線上教練、行銷顧問與高單價服務賣家打造的獲客引擎。
+                  專為線上教練、行銷顧問與高單價服務業主打造的獲客引擎。
                 </p>
 
                 <p className="text-[14px] text-[#666] leading-[1.7] mb-8">
