@@ -103,7 +103,7 @@ export function Overview() {
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-2xl p-10 h-full flex flex-col justify-center hover:bg-bg-card-hover transition-all duration-500">
                 <div className="text-[72px] font-bold text-text-primary leading-none tracking-[-0.04em] mb-3">
-                  <AnimatedCounter value={34} suffix="+" />
+                  <AnimatedCounter value={PROJECT.deliverables.reduce((sum, cat) => sum + cat.items.length, 0) + PROJECT.timeline.reduce((sum, phase) => sum + phase.tasks.length, 0)} suffix="+" />
                 </div>
                 <div className="text-[13px] text-text-muted leading-[1.6] group-hover:text-text-secondary transition-colors duration-500">
                   完整交付項目涵蓋所有觸點
@@ -114,9 +114,9 @@ export function Overview() {
 
           <div className="md:col-span-7 grid grid-cols-3 gap-5">
             {[
-              { value: 4, suffix: "", label: "項目階段" },
-              { value: 18, suffix: "", label: "核心交付" },
-              { value: 15, suffix: "", label: "行銷素材" },
+              { value: PROJECT.timeline.length, suffix: "", label: "項目階段" },
+              { value: PROJECT.deliverables.reduce((sum, cat) => sum + cat.items.length, 0), suffix: "", label: "核心交付" },
+              { value: PROJECT.scope.included.length, suffix: "", label: "服務項目" },
             ].map((stat, i) => (
               <ScrollReveal key={stat.label} delay={0.2 + i * 0.1} variant="scaleIn">
                 <TiltCard className="group h-full">
